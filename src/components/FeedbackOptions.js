@@ -5,7 +5,7 @@ export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
         <Button
           key={option}
           updateClics={onLeaveFeedback}
-          buttonText={option}
+          buttonText={option.charAt(0).toUpperCase() + option.slice(1)}
         />
       ))}
     </div>
